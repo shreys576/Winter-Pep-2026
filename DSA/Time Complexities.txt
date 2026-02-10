@@ -1,0 +1,45 @@
+Big O reprsentation represents upper bound time complexity (worst case). Main focus on this one
+Theta = average case
+Omega = Best case
+
+****O(1) = Constant Time = Time taken doesn't depend on the input size. The algo always runs in the same time. 
+Eg :- cout << "Hello";
+for(int i=0;i<10;i++){
+
+}
+
+
+****O(n) = Linear Time = Time grows directly propotional to input size.
+Eg :- for(int i = 0; i<n;i++){
+
+}
+if 2 un nested loops are there, we add their complexities and ignore the constant.
+Eg :- for(int i =0;i<n;i++){
+    Time Complexity = O(n)
+}
+for(int j=0;j<n;j++){
+    Time complexity = O(n)
+}
+
+hence total complexity = O(2n)
+ignore constant therefore time complexity = O(n)
+
+****O(log n) = Logarthmic Time = The time grows Logarthmically as the input size increases , often seen in algos that divide the input in half, like binary search.
+
+****O(n log n) = Linear and Logarthmic Time (Linearithmic), seen in merge and quick sort.
+
+****O(n^2) = Quadratic Time = Time grows propotionally to the square of the input size. In cases like nested loops.
+Eg :- for(int i = 0; i < n; i++){
+    for(int j = 0; j < n; j++){
+        Time COmplexity = O(n^2)
+    }
+}
+for(int i = 0; i < n; i++){
+    Time complexity = O(n)
+}
+
+if there are multiple complexities, we consider thye bigger complexity as the overall complexity. So in the above one total complexity is O(n^2) + O(n) we ignore the smakller ones so overall complexity is O(n^2)
+
+in case of space complexity, if we use only the stuff given in the question, we get constyant space complexity and it stacks up based onmnm what other extra stuff, like a variable or array, we add
+
+
