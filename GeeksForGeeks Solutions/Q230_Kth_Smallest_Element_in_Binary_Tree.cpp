@@ -128,7 +128,6 @@ int main() {
     TreeNode* root6 = new TreeNode(0);
     root6->left = new TreeNode(-3);
     root6->right = new TreeNode(9);
-
     root6->left->left = new TreeNode(-5);
     root6->right->left = new TreeNode(5);
     root6->right->right = new TreeNode(12);
